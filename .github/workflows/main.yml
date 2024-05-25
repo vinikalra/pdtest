@@ -16,7 +16,7 @@ jobs:
           pip install pyyaml
       - name: set pythonpath
         run: |
-          echo "PYTHONPATH=home/runner/work/podcast-test" >> "$GITHUB_ENV"
+          echo "PYTHONPATH=home/runner/work" >> "$GITHUB_ENV"
       - name: Run Feed Generator
         run: python feed.py
       - name: Push Repo
