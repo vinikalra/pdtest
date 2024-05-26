@@ -6,6 +6,9 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
+      - name: Python Path Setup
+        run: |
+          echo $PATH
       - name: Run Feed Generator
         run: python feed.py
     
